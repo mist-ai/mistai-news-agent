@@ -1,0 +1,9 @@
+[project]
+name="mistai-portfolio-agent"
+version="0.1.0"
+dependencies = [
+    "python-dotenv",
+    "fastapi[standard]",
+    "pydantic>=2.10.4",
+    "pydantic-settings>=2.7.0",
+]
