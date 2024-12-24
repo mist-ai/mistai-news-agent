@@ -22,7 +22,7 @@ class FinbertAnalyzer(Analyzer):
                 A list of dictionaries where each dictionary contains the original article data 
                 along with its sentiment score and label.
         """
-        analyzed_articles = []
+
         for article in articles:
             content= article['content']
             if content:
@@ -36,10 +36,8 @@ class FinbertAnalyzer(Analyzer):
             
             break
 
-        return analyzed_articles
+        return articles
 
 
 a = FinbertAnalyzer()
-print(a.analyze([{"content": "Sri Lanka’s HNB profits up 262-pct in June quarter",
-  "model": "Mustang",
-  "year": 1964}]))
+print(a.analyze([{"content": "Sri Lanka’s HNB profits up 262-pct in June quarter"}]))
